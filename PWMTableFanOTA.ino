@@ -39,7 +39,7 @@ uint8_t Dir1 = HIGH; // 2023-01-08 set output polarities to conform to shield
 uint8_t Dir2 = HIGH;
 
 static int val = 0; // 2018-10-25
-static int val2 = 0; // 2019-04-19
+static int val2 = 50; // 2019-04-19
 static int dots = 0;
 void setup () 
 {
