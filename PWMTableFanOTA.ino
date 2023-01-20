@@ -25,7 +25,7 @@ extern "C" {
 
 
 const char* ssid = "MYHOTSPOT"; // For testing in study
-const char* password = "td-w8960nwubble"; // 343 wifi repeater
+const char* password = "MYPASSWORD"; // 343 wifi repeater
 IPAddress staticIP(12,34,56,78); 
 IPAddress gateway(12,34,56,1);    
 
@@ -48,11 +48,9 @@ void setup ()
   pinMode(Dirpin1, OUTPUT); 
   pinMode(Dirpin2, OUTPUT); 
   analogWriteRange(100); /* 2023-01-09 Use default  */
-  analogWriteFreq(5); /* 2023-01-09 minimum hertz for min audible noise */
+  analogWriteFreq(3); /* Arduino v1.8.5 only */
   digitalWrite(Dirpin1, Dir1); 
   digitalWrite(Dirpin2, Dir2);
-  val = 50;
-  val2 = 0;
   analogWrite(PWMpin1, val);  /* 60 == 4V at VM 9V set initial duty cycle 2022-10-03 */
   analogWrite(PWMpin2, val2);  /* set initial duty cycle 2022-10-03 */
   
